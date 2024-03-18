@@ -11,4 +11,4 @@ COPY . /e2e
 RUN npm install
 
 # Open Cypress test runner
-CMD ["cypress", "run"]
+CMD ["npm", "run", "cy:run"]
