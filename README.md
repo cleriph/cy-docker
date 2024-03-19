@@ -15,8 +15,7 @@ Create cypress-tests image:
 
 Run cypress-tests container: 
 (This starts the container and runs the cy tests headlessly)
-`docker run --add-host=host.docker.internal:host-gateway cypress-tests`
-
+`docker run --add-host=host.docker.internal:host-gateway -v /tmp:/e2e/cypress/screenshots cypress-tests`
 
 
 ### To stop and delete container:
